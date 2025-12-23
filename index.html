@@ -2,11 +2,76 @@
 <html>
 <head>
     <title>Glovit - Documentación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+        /* Estilos base - se mantienen igual */
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 40px auto;
+            padding: 0 20px;
+        }
         h1 { color: #333; }
-        .card { border: 1px solid #ddd; padding: 20px; margin: 20px 0; border-radius: 8px; }
-        .btn { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .card { 
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+        }
+        .btn { 
+            background: #007bff; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        /* Responsive adicional */
+        @media (max-width: 768px) {
+            body {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            
+            .card {
+                padding: 15px;
+                margin: 15px 0;
+            }
+            
+            .btn {
+                display: block;
+                text-align: center;
+                padding: 12px 20px;
+                margin-top: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            .card {
+                padding: 12px;
+                margin: 12px 0;
+            }
+            
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
